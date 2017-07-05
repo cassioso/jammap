@@ -5,7 +5,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	    
+
 		<style>
 		    html { height: 100%; }
 			body {
@@ -17,12 +17,12 @@
 			#nav { z-index: 100; position: absolute; background-color: #fff; border: 1px #800080 Solid; padding: 5px; }
 			#map { width: 100%; height: 100% }
 		</style>
-	</head>	
+	</head>
 	<body>
 	    <div id="container">
 	    	<div id="nav">
 	    		<a href="">Play</a> | <a href="">Stop</a>
-	    		<br/>
+	    		<hr/>
 	    		<div id="playing_now"></div>
 	    	</div>
 
@@ -57,12 +57,12 @@
 
 			var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
 		       +latLng.lat()+","+latLng.lng()+"&sensor=false";
-		    
+
 		    console.log(url);
 
-		    
+
 		    $.get(url, function( data ) {
-		    	
+
 		    	var selectedCountry = getCountryFromReverseGeocodingJson(data.results[0]);
 		    	console.log(selectedCountry);
 
@@ -106,9 +106,9 @@
 	                        	var types = v1[i][k2];
 	                        	if (types[0] =="country") {
 	                            	selectedCountry = v1[i];
-	                        	} 
+	                        	}
 	                     	}
-						}          
+						}
 					}
 				}
 			});
@@ -119,7 +119,7 @@
 	 	function configurePlayingNow(selectedCountry){
 	 		if(!selectedCountry) return;
 
-	 		$("#playing_now").text(selectedCountry.long_name);
+	 		$("#playing_now").text(">> " + selectedCountry.long_name);
 	 	}
 
 		var styles = {
