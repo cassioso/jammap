@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-small;
+}
+
+#container {
+    width: 100%;
+    height: 100%
+}
+
+#nav {
+    z-index: 100;
+    position: absolute;
+    background-color: #fff;
+    border: 1px #800080 Solid;
+    padding: 5px;
+}
+
+#map {
+    width: 100%;
+    height: 100%
+}
