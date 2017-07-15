@@ -2,24 +2,31 @@
 <html>
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
-	<link rel="stylesheet" href="css/jammap.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/jammap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css"/>
+    <link rel="stylesheet" href="css/jammap.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jammap.js"></script>
 </head>
 
 <body onload="init()">
-	<div id="container">
-		<div id="nav">
-			<a href="">Play</a> | <a href="">Stop</a>
-			<hr/>
-			<div id="playing_now"></div>
-		</div>
+<a class="github-fork-ribbon" href="https://github.com/cassioso/jammap" title="Fork me on GitHub">Fork me on
+    GitHub</a>
+<div id="container">
+    <div id="nav">
+        <a href="">Play</a> | <a href="">Stop</a>
+        <hr/>
+        <div id="playing_now"></div>
+    </div>
 
-		<div id="map"></div>
-	</div>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tSGPGrrLxqwqdhiAk-huHbAHAy4Aqi4&callback=initMap" async defer></script>
+    <div id="map"></div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tSGPGrrLxqwqdhiAk-huHbAHAy4Aqi4&callback=initMap"
+        async defer></script>
 </body>
 
 </html>
