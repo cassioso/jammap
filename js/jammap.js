@@ -101,7 +101,7 @@
       night: [{
           "elementType": "geometry",
           "stylers": [{
-              "color": "#212121"
+              "color": "#303030"
           }]
       }, {
           "elementType": "labels.icon",
